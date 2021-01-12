@@ -174,7 +174,7 @@ private:
 
         while (t < 1.0)
         {
-            Serial.println(t);
+            // Serial.println(t);
             s->_computeAngle();
             float currAngle = s->_angle;
             t = _fmap(currAngle, origAngle, s->_target, 0, 1);

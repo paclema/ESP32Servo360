@@ -60,7 +60,7 @@ bool ESP32Servo360::attach(int ctrlPin, int feedbackPin)
         _angle += 360;
         _orientation = _angle;
     }
-    Serial.println(_angle);
+    // Serial.println(_angle);
 
     return true;
 }
@@ -95,7 +95,7 @@ void ESP32Servo360::calibrate()
 
     while (origAngle + 720 > _angle)
     {
-        Serial.println(origAngle);
+        // Serial.println(origAngle);
         delay(1);
         _computeAngle();
 
